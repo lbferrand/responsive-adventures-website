@@ -65,9 +65,66 @@ img {
   height: auto;
 }
 /* Reusable classes */
-
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
 /* header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+.logo-box {
+  min-width: 10.8rem;
+}
+
+.menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 80%;
+  background-color: var(--clr-dark);
+  padding: 5rem;
+  border-radius: 0.8rem;
+  z-index: 9999;
+}
+
+.menu,
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  letter-spacing: 1px;
+}
+
+.menu-toggle-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.sm-screen-hidden {
+  display: none;
+}
+
+.menu-toggle-icon {
+  cursor: pointer;
+}
 /* Hero */
 
 /* Hiking information */
