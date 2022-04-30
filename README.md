@@ -5,4 +5,4 @@
 > This website was built by Luciana Ferrand with a design from Figma example.
 #### Watch the video [here](https://youtu.be/3-t3Zmtsvb8)
 
-![Project humbnail](/thumbnail.jpg)
+![Project humbnail](/thumbnail.png)
