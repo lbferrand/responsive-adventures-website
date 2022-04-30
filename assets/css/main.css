@@ -29,7 +29,21 @@
   --container-spacing: 0 2.4rem;
 }
 /* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-md);
+  color: var(--clr-light);
+}
 /* Reusable classes */
 
 /* header */
