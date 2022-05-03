@@ -15,3 +15,13 @@ closeMenuIcon.addEventListener("click", () => {
   mobileMenu.classList.remove("menu-opened");
   headerOverlay.classList.remove("menu-opened");
 });
+
+window.addEventListener("scroll", () => {
+  let scrollPosition = window.scrollY;
+
+  grassImage.style.transform = "translateY(" + -scrollPosition * 0.02 + "%)";
+  mountainsImage.style.transform =
+    "translateY(" + -scrollPosition * 0.04 + "%)";
+  skyImage.style.transform = "translateY(" + -scrollPosition * 0.01 + "%)";
+  heroData.style.transform = "translateY(" + -scrollPosition * 0.03 + "%)";
+});
