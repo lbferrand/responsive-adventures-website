@@ -24,4 +24,5 @@ window.addEventListener("scroll", () => {
     "translateY(" + -scrollPosition * 0.04 + "%)";
   skyImage.style.transform = "translateY(" + -scrollPosition * 0.01 + "%)";
   heroData.style.transform = "translateY(" + -scrollPosition * 0.03 + "%)";
+  heroData.style.opacity = 1 - scrollPosition * 0.002;
 });
