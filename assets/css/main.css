@@ -71,6 +71,20 @@ img {
   margin: 0 auto;
   padding: 0 2.4rem;
 }
+
+.d-grid {
+  display: grid;
+}
+
+.title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: var(--margin-bottom-md);
+}
+
 /* header */
 .header {
   position: absolute;
@@ -206,14 +220,6 @@ img {
   transform: translateY(-50%);
 }
 
-.title {
-  font-family: var(--font-family-title);
-  font-size: var(--font-size-lg);
-  text-transform: capitalize;
-  line-height: 1.3;
-  margin-bottom: var(--margin-bottom-md);
-}
-
 .main-title {
   font-size: var(--font-size-xl);
 }
@@ -249,7 +255,48 @@ img {
 }
 
 /* Hiking information */
+.hiking-information {
+  position: relative;
+  margin-top: -12rem;
+  z-index: 500;
+}
 
+.card {
+  gap: 6.4rem;
+  margin-bottom: 12rem;
+}
+
+.card-info {
+  position: relative;
+}
+
+.count {
+  font-size: 10rem;
+  font-weight: bold;
+  opacity: 0.1;
+  position: absolute;
+  left: -2rem;
+  z-index: -1;
+}
+
+.card-image {
+  width: 100%;
+  height: 32rem;
+  object-fit: cover;
+}
+
+.card-image.frame-position-center {
+  object-position: 50% 100%;
+}
+
+.card-description {
+  line-height: 2.8rem;
+  margin-bottom: var(--margin-bottom-md);
+}
+
+.btn-accent {
+  color: var(--clr-accent);
+}
 /* Footer */
 
 /* Media queries */
