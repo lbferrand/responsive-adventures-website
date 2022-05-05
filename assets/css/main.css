@@ -510,4 +510,27 @@ img {
     max-width: 79rem;
     justify-self: center;
   }
+
+  /* Hiking information */
+  .hiking-information {
+    margin-top: 0;
+    padding-top: 20rem;
+  }
+
+  .card {
+    column-gap: 8.1rem;
+  }
+
+  .card-image {
+    grid-column: initial;
+    order: 1;
+    width: 48rem;
+    height: 68rem;
+    justify-self: end;
+  }
+
+  .card-info {
+    grid-column: initial;
+    align-self: center;
+  }
 }
