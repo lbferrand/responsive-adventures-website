@@ -486,4 +486,28 @@ img {
   .nav-link:hover {
     color: var(--clr-accent);
   }
+
+  .btn-scroll-down:hover i {
+    transform: translateY(0.5rem);
+  }
+
+  .btn-accent:hover i {
+    transform: translateX(0.5rem);
+  }
+
+  /*Hero */
+
+  .parallax-bottom-img {
+    top: 60%;
+  }
+
+  .parallax-middle-img {
+    top: 40%;
+  }
+
+  .hero-data {
+    top: 45%;
+    max-width: 79rem;
+    justify-self: center;
+  }
 }
