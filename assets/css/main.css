@@ -426,3 +426,64 @@ img {
     margin-bottom: 0;
   }
 }
+
+@media screen and (min-width: 991px) {
+  :root {
+    --font-size-xl: 7.5rem;
+  }
+
+  /*Header */
+  .menu {
+    position: initial;
+    transform: initial;
+    width: initial;
+    background-color: initial;
+    padding: initial;
+    border-radius: initial;
+    transition: initial;
+    margin-left: initial;
+  }
+
+  .menu,
+  .nav-list {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .lg-screen-hidden,
+  .menu-toggle-icon {
+    display: none;
+  }
+
+  .sm-screen-hidden {
+    display: block;
+  }
+
+  .nav-link {
+    display: inline;
+    font-weight: bold;
+    padding: 8rem 2.4rem;
+  }
+
+  .account-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .account-link i {
+    font-weight: 300;
+  }
+
+  .btn,
+  .btn i,
+  .nav-link {
+    transition: transform 0.5s;
+  }
+
+  .btn:hover,
+  .nav-link:hover {
+    color: var(--clr-accent);
+  }
+}
