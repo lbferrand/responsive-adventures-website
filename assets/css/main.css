@@ -14,7 +14,7 @@
   --clr-accent: #fbd784;
 
   --font-family-title: "Cormorant", serif;
-  --font-family-body: "Cormorant Upright", serif;
+  --font-family-body: "Montserrat", sans-serif;
 
   --font-size-sm: 1.4rem;
   --font-size-md: 1.6rem;
@@ -298,5 +298,47 @@ img {
   color: var(--clr-accent);
 }
 /* Footer */
+.footer {
+  padding: 4rem 0 5rem;
+}
+
+.footer-container {
+  row-gap: 3.2rem;
+}
+
+.brand-information > * {
+  margin-bottom: var(--margin-bottom-md);
+}
+
+.copyright {
+  font-size: var(--font-size-sm);
+  margin-bottom: 0;
+  opacity: 0.8;
+}
+
+.footer-nav-title {
+  color: var(--clr-accent);
+  font-size: 2rem;
+  margin-bottom: var(--margin-bottom-md);
+}
+
+.footer-nav-link {
+  margin-bottom: var(--margin-bottom-sm);
+}
+
+.brand-information,
+.footer-nav-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-information {
+  order: 1;
+}
+
+.footer-nav {
+  order: 0;
+  gap: var(--margin-bottom-sm);
+}
 
 /* Media queries */
