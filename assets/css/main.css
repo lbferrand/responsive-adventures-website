@@ -533,4 +533,15 @@ img {
     grid-column: initial;
     align-self: center;
   }
+
+  .order-first {
+    order: 0;
+    justify-self: start;
+  }
+
+  /*Footer*/
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+  }
 }
