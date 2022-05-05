@@ -69,7 +69,7 @@ img {
 .container {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 0 2.4rem;
+  padding: var(--container-spacing);
 }
 
 .d-grid {
@@ -342,3 +342,61 @@ img {
 }
 
 /* Media queries */
+@media screen and (min-width: 768px) {
+  :root {
+    --font-size-xl: 5.8rem;
+    --container-spacing: 0 8rem;
+  }
+  /*Hero */
+  .hero {
+    height: 100vh;
+  }
+
+  .parallax-img {
+    height: auto;
+  }
+
+  .parallax-bottom-img {
+    top: 45%;
+  }
+
+  .parallax-middle-img {
+    top: 30%;
+  }
+
+  /*Hiking information */
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 6.4rem;
+    margin-bottom: 20rem;
+  }
+
+  .card-image {
+    grid-column: 1/-1;
+    width: 60rem;
+    height: 42rem;
+    justify-self: center;
+  }
+
+  .card-info {
+    grid-column: 1/-1;
+  }
+
+  .count {
+    font-size: 20rem;
+    left: -8rem;
+  }
+
+  .tagline {
+    margin-left: 9.5rem;
+  }
+
+  .tagline::before {
+    width: 7.2rem;
+    left: -9rem;
+  }
+
+  .card-title {
+    font-size: 6.4rem;
+  }
+}
