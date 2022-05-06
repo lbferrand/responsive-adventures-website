@@ -76,15 +76,6 @@ img {
   display: grid;
 }
 
-.title {
-  font-family: var(--font-family-title);
-  font-size: var(--font-size-lg);
-  font-weight: 300;
-  text-transform: capitalize;
-  line-height: 1.3;
-  margin-bottom: var(--margin-bottom-md);
-}
-
 /* header */
 .header {
   position: absolute;
@@ -218,6 +209,15 @@ img {
   height: 2px;
   background-color: var(--clr-accent);
   transform: translateY(-50%);
+}
+
+.title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-lg);
+  font-weight: 300;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: var(--margin-bottom-md);
 }
 
 .main-title {
@@ -543,5 +543,19 @@ img {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0;
+  }
+
+  .footer-nav-group {
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 1068px) {
+  .hero-data {
+    top: 50%;
+  }
+
+  .count {
+    left: -10rem;
   }
 }
